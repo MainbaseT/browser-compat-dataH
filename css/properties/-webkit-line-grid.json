@@ -5,7 +5,8 @@
         "__compat": {
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": "17",
+              "version_removed": "34"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -20,11 +21,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": "≤13.1"
+              "version_added": "6"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,

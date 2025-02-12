@@ -3,7 +3,7 @@
     "api": {
       "scripting": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/scripting/",
+          "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/scripting",
           "support": {
             "chrome": {
               "version_added": "88",
@@ -67,8 +67,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1736575"
+                  "version_added": "128"
                 },
                 "firefox_android": "mirror",
                 "opera": "mirror",
@@ -106,7 +105,7 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/scripting/RegisteredContentScript",
             "support": {
               "chrome": {
-                "version_added": "88"
+                "version_added": "96"
               },
               "edge": "mirror",
               "firefox": {
@@ -121,18 +120,38 @@
               "safari_ios": "mirror"
             }
           },
+          "matchOriginAsFallback": {
+            "__compat": {
+              "support": {
+                "chrome": {
+                  "version_added": "119"
+                },
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": "128"
+                },
+                "firefox_android": "mirror",
+                "opera": "mirror",
+                "safari": {
+                  "version_added": false,
+                  "impl_url": "https://webkit.org/b/264829"
+                },
+                "safari_ios": "mirror"
+              }
+            }
+          },
           "persistAcrossSessions": {
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": "88"
+                  "version_added": "96"
                 },
                 "edge": "mirror",
                 "firefox": {
                   "version_added": "102",
                   "notes": [
                     "Since Firefox 105, this option is optional and accepts any boolean value.",
-                    "Prior to Firefox 105, this option was required and only accepted the <code>false</code> value."
+                    "Prior to Firefox 105, this option was required and only accepted the `false` value."
                   ]
                 },
                 "firefox_android": "mirror",
@@ -153,7 +172,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false
+                  "version_added": "128"
                 },
                 "firefox_android": "mirror",
                 "opera": "mirror",
@@ -207,7 +226,7 @@
                 "support": {
                   "chrome": {
                     "version_added": false,
-                    "impl_url": "https://crbug.com/1271527"
+                    "impl_url": "https://crbug.com/40205757"
                   },
                   "edge": "mirror",
                   "firefox": {
@@ -288,8 +307,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": "102",
-                  "notes": "Only supports <code>ISOLATED</code>, not <code>MAIN</code>."
+                  "version_added": "102"
                 },
                 "firefox_android": "mirror",
                 "opera": "mirror",
@@ -297,6 +315,44 @@
                   "version_added": "15.4"
                 },
                 "safari_ios": "mirror"
+              }
+            },
+            "ISOLATED": {
+              "__compat": {
+                "support": {
+                  "chrome": {
+                    "version_added": "95"
+                  },
+                  "edge": "mirror",
+                  "firefox": {
+                    "version_added": "102"
+                  },
+                  "firefox_android": "mirror",
+                  "opera": "mirror",
+                  "safari": {
+                    "version_added": "15.4"
+                  },
+                  "safari_ios": "mirror"
+                }
+              }
+            },
+            "MAIN": {
+              "__compat": {
+                "support": {
+                  "chrome": {
+                    "version_added": "95"
+                  },
+                  "edge": "mirror",
+                  "firefox": {
+                    "version_added": "128"
+                  },
+                  "firefox_android": "mirror",
+                  "opera": "mirror",
+                  "safari": {
+                    "version_added": "15.4"
+                  },
+                  "safari_ios": "mirror"
+                }
               }
             }
           }
@@ -306,7 +362,7 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/scripting/getRegisteredContentScripts",
             "support": {
               "chrome": {
-                "version_added": "88"
+                "version_added": "96"
               },
               "edge": "mirror",
               "firefox": {
@@ -354,7 +410,7 @@
                 "firefox_android": "mirror",
                 "opera": "mirror",
                 "safari": {
-                  "version_added": false
+                  "version_added": "18"
                 },
                 "safari_ios": "mirror"
               }
@@ -366,7 +422,7 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/scripting/registerContentScripts",
             "support": {
               "chrome": {
-                "version_added": "88"
+                "version_added": "96"
               },
               "edge": "mirror",
               "firefox": {
@@ -414,7 +470,7 @@
                 "firefox_android": "mirror",
                 "opera": "mirror",
                 "safari": {
-                  "version_added": false
+                  "version_added": "18"
                 },
                 "safari_ios": "mirror"
               }
@@ -426,7 +482,7 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/scripting/unregisterContentScripts",
             "support": {
               "chrome": {
-                "version_added": "88"
+                "version_added": "96"
               },
               "edge": "mirror",
               "firefox": {
@@ -447,7 +503,7 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/scripting/updateContentScripts",
             "support": {
               "chrome": {
-                "version_added": "88"
+                "version_added": "96"
               },
               "edge": "mirror",
               "firefox": {

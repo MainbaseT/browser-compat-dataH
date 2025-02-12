@@ -6,7 +6,8 @@
           "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AggregateError",
           "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-aggregate-error-objects",
           "tags": [
-            "web-features:snapshot:ecmascript-2021"
+            "web-features:snapshot:ecmascript-2021",
+            "web-features:promise-any"
           ],
           "support": {
             "chrome": {
@@ -35,7 +36,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -45,11 +47,12 @@
         },
         "AggregateError": {
           "__compat": {
-            "description": "<code>AggregateError()</code> constructor",
+            "description": "`AggregateError()` constructor",
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AggregateError/AggregateError",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-aggregate-error-constructor",
             "tags": [
-              "web-features:snapshot:ecmascript-2021"
+              "web-features:snapshot:ecmascript-2021",
+              "web-features:promise-any"
             ],
             "support": {
               "chrome": {
@@ -78,7 +81,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -89,11 +93,11 @@
         },
         "errors": {
           "__compat": {
-            "description": "<code>errors</code>",
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AggregateError/errors",
             "spec_url": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-aggregate-error",
             "tags": [
-              "web-features:snapshot:ecmascript-2021"
+              "web-features:snapshot:ecmascript-2021",
+              "web-features:promise-any"
             ],
             "support": {
               "chrome": {
@@ -122,7 +126,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -133,11 +138,15 @@
         },
         "serializable_object": {
           "__compat": {
-            "description": "<code>AggregateError</code> is serializable",
+            "description": "`AggregateError` is serializable",
             "mdn_url": "https://developer.mozilla.org/docs/Glossary/Serializable_object",
+            "tags": [
+              "web-features:promise-any"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "98",
+                "notes": "`AggregateError` serializes to the `Error` type, without additional properties."
               },
               "chrome_android": "mirror",
               "deno": {
@@ -146,7 +155,7 @@
               "edge": "mirror",
               "firefox": {
                 "version_added": "103",
-                "notes": "Serialized properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>errors</code>."
+                "notes": "`AggregateError` serializes to the `AggregateError` type, with properties `name`, `message`, `cause`, and `errors`."
               },
               "firefox_android": "mirror",
               "ie": {
@@ -159,15 +168,16 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "17"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
-              "standard_track": false,
+              "experimental": false,
+              "standard_track": true,
               "deprecated": false
             }
           }

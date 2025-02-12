@@ -4,7 +4,13 @@
       "opacity": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/opacity",
-          "spec_url": "https://drafts.csswg.org/css-color/#transparency",
+          "spec_url": [
+            "https://drafts.csswg.org/css-color/#propdef-opacity",
+            "https://svgwg.org/svg2-draft/render.html#ObjectAndGroupOpacityProperties"
+          ],
+          "tags": [
+            "web-features:opacity"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -46,7 +52,8 @@
             ],
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -57,6 +64,9 @@
         "percentages": {
           "__compat": {
             "description": "Support for percentage opacity values",
+            "tags": [
+              "web-features:opacity"
+            ],
             "support": {
               "chrome": {
                 "version_added": "78"
@@ -78,7 +88,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

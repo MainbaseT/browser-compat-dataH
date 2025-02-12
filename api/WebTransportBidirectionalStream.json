@@ -28,7 +28,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -64,7 +65,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -74,8 +76,11 @@
         },
         "returns_WebTransportReceiveStream": {
           "__compat": {
-            "description": "Returns <code>WebTransportReceiveStream</code> (earlier spec returned <code>WritableStream</code>)",
+            "description": "Returns `WebTransportReceiveStream` (earlier spec returned `WritableStream`)",
             "spec_url": "https://w3c.github.io/webtransport/#dom-webtransportbidirectionalstream-readable",
+            "tags": [
+              "web-features:webtransport"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -97,7 +102,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -135,7 +141,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -145,8 +152,11 @@
         },
         "returns_WebTransportSendStream": {
           "__compat": {
-            "description": "Returns <code>WebTransportSendStream</code> (earlier spec returned <code>WritableStream</code>)",
+            "description": "Returns `WebTransportSendStream` (earlier spec returned `WritableStream`)",
             "spec_url": "https://w3c.github.io/webtransport/#dom-webtransportbidirectionalstream-readable",
+            "tags": [
+              "web-features:webtransport"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -168,7 +178,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,

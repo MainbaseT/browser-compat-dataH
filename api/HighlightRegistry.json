@@ -14,7 +14,8 @@
           "chrome_android": "mirror",
           "edge": "mirror",
           "firefox": {
-            "version_added": "preview"
+            "version_added": "preview",
+            "impl_url": "https://bugzil.la/1703961"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -28,7 +29,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -49,7 +51,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "preview"
+              "version_added": "preview",
+              "impl_url": "https://bugzil.la/1703961"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -63,7 +66,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -85,7 +89,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "preview"
+              "version_added": "preview",
+              "impl_url": "https://bugzil.la/1703961"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -99,7 +104,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -121,7 +127,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "preview"
+              "version_added": "preview",
+              "impl_url": "https://bugzil.la/1703961"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -135,7 +142,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -157,7 +165,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "preview"
+              "version_added": "preview",
+              "impl_url": "https://bugzil.la/1703961"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -171,7 +180,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -193,7 +203,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "preview"
+              "version_added": "preview",
+              "impl_url": "https://bugzil.la/1703961"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -207,7 +218,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -229,7 +241,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "preview"
+              "version_added": "preview",
+              "impl_url": "https://bugzil.la/1703961"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -243,7 +256,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -265,7 +279,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "preview"
+              "version_added": "preview",
+              "impl_url": "https://bugzil.la/1703961"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -279,7 +294,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -301,7 +317,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "preview"
+              "version_added": "preview",
+              "impl_url": "https://bugzil.la/1703961"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -315,7 +332,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -337,7 +355,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "preview"
+              "version_added": "preview",
+              "impl_url": "https://bugzil.la/1703961"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -351,7 +370,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -373,7 +393,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "preview"
+              "version_added": "preview",
+              "impl_url": "https://bugzil.la/1703961"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -387,7 +408,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -398,6 +420,7 @@
       },
       "@@iterator": {
         "__compat": {
+          "description": "[Symbol.iterator]",
           "tags": [
             "web-features:highlight"
           ],
@@ -408,7 +431,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "preview"
+              "version_added": "preview",
+              "impl_url": "https://bugzil.la/1703961"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -422,7 +446,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

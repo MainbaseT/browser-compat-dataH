@@ -29,7 +29,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -39,6 +40,7 @@
         },
         "accent": {
           "__compat": {
+            "spec_url": "https://w3c.github.io/mathml-core/#dfn-accent",
             "tags": [
               "web-features:mathml"
             ],
@@ -63,7 +65,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

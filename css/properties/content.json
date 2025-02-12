@@ -5,6 +5,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/content",
           "spec_url": "https://drafts.csswg.org/css-content/#content-property",
+          "tags": [
+            "web-features:content"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -32,7 +35,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -42,7 +46,10 @@
         },
         "alt_text": {
           "__compat": {
-            "description": "Alternative text after <code>/</code>",
+            "description": "Alternative text after `/`",
+            "tags": [
+              "web-features:alt-text-generated-content"
+            ],
             "support": {
               "chrome": {
                 "version_added": "77"
@@ -50,7 +57,7 @@
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": false
+                "version_added": "128"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -64,7 +71,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -76,6 +84,9 @@
         "element_replacement": {
           "__compat": {
             "description": "Element replacement",
+            "tags": [
+              "web-features:content"
+            ],
             "support": {
               "chrome": {
                 "version_added": "28"
@@ -101,7 +112,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -112,9 +124,12 @@
         },
         "gradient": {
           "__compat": {
-            "description": "<code>&lt;gradient&gt;</code>",
+            "description": "`&lt;gradient&gt;`",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/gradient",
             "spec_url": "https://drafts.csswg.org/css-images-4/#gradients",
+            "tags": [
+              "web-features:content"
+            ],
             "support": {
               "chrome": {
                 "version_added": "26"
@@ -126,7 +141,7 @@
               "firefox": {
                 "version_added": "113",
                 "partial_implementation": true,
-                "notes": "<code>content: &lt;gradient&gt;</code>` doesn't paint on ::before/::after pseudo elements. See <a href='https://bugzil.la/1832901'>bug 1832901</a>."
+                "notes": "`content: &lt;gradient&gt;` doesn't paint on ::before/::after pseudo elements. See [bug 1832901](https://bugzil.la/1832901)."
               },
               "firefox_android": "mirror",
               "ie": {
@@ -140,7 +155,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -151,20 +167,46 @@
         },
         "image-set": {
           "__compat": {
-            "description": "<code>image-set()</code>",
+            "description": "`image-set()`",
             "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/image/image-set",
             "spec_url": "https://drafts.csswg.org/css-images-4/#image-set-notation",
+            "tags": [
+              "web-features:image-set"
+            ],
             "support": {
-              "chrome": {
-                "version_added": "113"
-              },
+              "chrome": [
+                {
+                  "version_added": "113"
+                },
+                {
+                  "prefix": "-webkit-",
+                  "version_added": "113"
+                },
+                {
+                  "prefix": "-webkit-",
+                  "version_added": "20",
+                  "version_removed": "113",
+                  "partial_implementation": true,
+                  "notes": "Support for `url` images only and `x` is the only supported resolution unit."
+                }
+              ],
               "chrome_android": "mirror",
               "edge": "mirror",
-              "firefox": {
-                "version_added": "113",
-                "partial_implementation": true,
-                "notes": "<code>content: image-set(…);</code>` doesn't paint on ::before/::after pseudo elements. See <a href='https://bugzil.la/1832901'>bug 1832901</a>."
-              },
+              "firefox": [
+                {
+                  "version_added": "89"
+                },
+                {
+                  "prefix": "-webkit-",
+                  "version_added": "90"
+                },
+                {
+                  "version_added": "88",
+                  "version_removed": "89",
+                  "partial_implementation": true,
+                  "notes": "The `type()` function is not supported as an argument to `image-set()`."
+                }
+              ],
               "firefox_android": "mirror",
               "ie": {
                 "version_added": false
@@ -172,12 +214,45 @@
               "oculus": "mirror",
               "opera": "mirror",
               "opera_android": "mirror",
-              "safari": {
-                "version_added": "≤13.1"
-              },
+              "safari": [
+                {
+                  "version_added": "17"
+                },
+                {
+                  "prefix": "-webkit-",
+                  "version_added": "17"
+                },
+                {
+                  "version_added": "14",
+                  "version_removed": "17",
+                  "partial_implementation": true,
+                  "notes": "The `type()` function is not supported as an argument to `image-set()`."
+                },
+                {
+                  "prefix": "-webkit-",
+                  "version_added": "14",
+                  "version_removed": "17",
+                  "partial_implementation": true,
+                  "notes": "The `type()` function is not supported as an argument to `image-set()`."
+                },
+                {
+                  "version_added": "10.1",
+                  "version_removed": "14",
+                  "partial_implementation": true,
+                  "notes": "Support for `url` images only and `x` is the only supported resolution unit."
+                },
+                {
+                  "prefix": "-webkit-",
+                  "version_added": "6",
+                  "version_removed": "14",
+                  "partial_implementation": true,
+                  "notes": "Support for `url` images only and `x` is the only supported resolution unit."
+                }
+              ],
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -189,6 +264,9 @@
         "none": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-content/#valdef-content-none",
+            "tags": [
+              "web-features:content"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -212,7 +290,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -223,7 +302,10 @@
         },
         "none_applies_to_elements": {
           "__compat": {
-            "description": "<code>content: none</code> for elements",
+            "description": "`content: none` for elements",
+            "tags": [
+              "web-features:content"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -251,7 +333,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -263,6 +346,9 @@
         "normal": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-content/#valdef-content-normal",
+            "tags": [
+              "web-features:content"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -286,7 +372,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -297,9 +384,12 @@
         },
         "url": {
           "__compat": {
-            "description": "<code>url()</code>",
-            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/url()",
+            "description": "`url()`",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/url_value",
             "spec_url": "https://drafts.csswg.org/css-values/#urls",
+            "tags": [
+              "web-features:content"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -327,7 +417,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": "37"
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

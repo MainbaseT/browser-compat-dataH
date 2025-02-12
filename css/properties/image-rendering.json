@@ -4,7 +4,13 @@
       "image-rendering": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/image-rendering",
-          "spec_url": "https://drafts.csswg.org/css-images/#the-image-rendering",
+          "spec_url": [
+            "https://drafts.csswg.org/css-images/#the-image-rendering",
+            "https://svgwg.org/svg2-draft/painting.html#ImageRendering"
+          ],
+          "tags": [
+            "web-features:image-rendering"
+          ],
           "support": {
             "chrome": {
               "version_added": "13"
@@ -28,7 +34,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -39,6 +46,9 @@
         "auto": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-images/#valdef-image-rendering-auto",
+            "tags": [
+              "web-features:image-rendering"
+            ],
             "support": {
               "chrome": {
                 "version_added": "13"
@@ -60,7 +70,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -72,6 +83,9 @@
         "crisp-edges": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-images/#valdef-image-rendering-crisp-edges",
+            "tags": [
+              "web-features:crisp-edges"
+            ],
             "support": {
               "chrome": {
                 "alternative_name": "-webkit-optimize-contrast",
@@ -106,7 +120,8 @@
               ],
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -138,7 +153,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -170,7 +186,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -182,6 +199,9 @@
         "pixelated": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-images/#valdef-image-rendering-pixelated",
+            "tags": [
+              "web-features:image-rendering"
+            ],
             "support": {
               "chrome": {
                 "version_added": "41"
@@ -207,7 +227,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -219,6 +240,9 @@
         "smooth": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-images/#valdef-image-rendering-smooth",
+            "tags": [
+              "web-features:smooth"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -240,7 +264,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,

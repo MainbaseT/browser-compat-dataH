@@ -4,7 +4,13 @@
       "white-space": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/white-space",
-          "spec_url": "https://drafts.csswg.org/css-text/#white-space-property",
+          "spec_url": [
+            "https://drafts.csswg.org/css-text-4/#white-space-property",
+            "https://svgwg.org/svg2-draft/text.html#TextWhiteSpace"
+          ],
+          "tags": [
+            "web-features:white-space"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -32,7 +38,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -43,6 +50,9 @@
         "break-spaces": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-text/#valdef-white-space-break-spaces",
+            "tags": [
+              "web-features:white-space"
+            ],
             "support": {
               "chrome": {
                 "version_added": "76"
@@ -66,7 +76,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -78,6 +89,9 @@
         "normal": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-text/#valdef-white-space-normal",
+            "tags": [
+              "web-features:white-space"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -101,7 +115,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -113,6 +128,9 @@
         "nowrap": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-text/#valdef-white-space-nowrap",
+            "tags": [
+              "web-features:white-space"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -140,7 +158,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -152,6 +171,9 @@
         "pre": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-text/#valdef-white-space-pre",
+            "tags": [
+              "web-features:white-space"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -179,7 +201,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": "37"
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -191,6 +214,9 @@
         "pre-line": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-text/#valdef-white-space-pre-line",
+            "tags": [
+              "web-features:white-space"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -220,7 +246,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": "37"
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -232,6 +259,9 @@
         "pre-wrap": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-text/#valdef-white-space-pre-wrap",
+            "tags": [
+              "web-features:white-space"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -253,7 +283,7 @@
               "firefox_android": "mirror",
               "ie": {
                 "version_added": "8",
-                "notes": "From Internet Explorer 5.5 to 7, <code>word-wrap: break-word;</code> can be used for line breaks in <code>pre</code> elements."
+                "notes": "From Internet Explorer 5.5 to 7, `word-wrap: break-word;` can be used for line breaks in `pre` elements."
               },
               "oculus": "mirror",
               "opera": {
@@ -269,7 +299,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": "37"
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -281,11 +312,14 @@
         "shorthand_values": {
           "__compat": {
             "description": "Accepts shorthand values",
+            "tags": [
+              "web-features:white-space"
+            ],
             "support": {
               "chrome": {
                 "version_added": "114",
                 "partial_implementation": true,
-                "notes": "Accepts shorthand values for <code>white-space-collapse</code> and <code>text-wrap</code> only."
+                "notes": "Only accepts values for `white-space-collapse` and `text-wrap-mode`, not `white-space-trim`."
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -304,7 +338,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -316,6 +351,9 @@
         "svg_elements": {
           "__compat": {
             "description": "On SVG elements",
+            "tags": [
+              "web-features:white-space"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -340,7 +378,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -351,7 +390,10 @@
         },
         "textarea_support": {
           "__compat": {
-            "description": "Support on <code>&lt;textarea&gt;</code>",
+            "description": "Support on `&lt;textarea&gt;`",
+            "tags": [
+              "web-features:white-space"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -379,7 +421,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": "37"
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

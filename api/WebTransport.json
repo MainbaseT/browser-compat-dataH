@@ -28,7 +28,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -38,7 +39,7 @@
       },
       "WebTransport": {
         "__compat": {
-          "description": "<code>WebTransport()</code> constructor",
+          "description": "`WebTransport()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/WebTransport/WebTransport",
           "spec_url": "https://w3c.github.io/webtransport/#dom-webtransport-webtransport",
           "tags": [
@@ -65,7 +66,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -75,8 +77,11 @@
         },
         "options_allowPooling_parameter": {
           "__compat": {
-            "description": "<code>options.allowPooling</code> parameter",
+            "description": "`options.allowPooling` parameter",
             "spec_url": "https://w3c.github.io/webtransport/#dom-webtransportoptions-allowpooling",
+            "tags": [
+              "web-features:webtransport"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -98,7 +103,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -109,8 +115,11 @@
         },
         "options_congestionControl_parameter": {
           "__compat": {
-            "description": "<code>options.congestionControl</code> parameter",
+            "description": "`options.congestionControl` parameter",
             "spec_url": "https://w3c.github.io/webtransport/#dom-webtransportoptions-congestioncontrol",
+            "tags": [
+              "web-features:webtransport"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -132,7 +141,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -143,8 +153,11 @@
         },
         "options_requireUnreliable_parameter": {
           "__compat": {
-            "description": "<code>options.requireUnreliable</code> parameter",
+            "description": "`options.requireUnreliable` parameter",
             "spec_url": "https://w3c.github.io/webtransport/#dom-webtransportoptions-requireunreliable",
+            "tags": [
+              "web-features:webtransport"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -166,7 +179,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -177,8 +191,11 @@
         },
         "options_serverCertificateHashes_parameter": {
           "__compat": {
-            "description": "<code>options.serverCertificateHashes</code> parameter",
+            "description": "`options.serverCertificateHashes` parameter",
             "spec_url": "https://w3c.github.io/webtransport/#dom-webtransportoptions-servercertificatehashes",
+            "tags": [
+              "web-features:webtransport"
+            ],
             "support": {
               "chrome": {
                 "version_added": "100"
@@ -186,7 +203,7 @@
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": false
+                "version_added": "125"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -200,10 +217,11 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }
@@ -213,6 +231,9 @@
       "byob_readers": {
         "__compat": {
           "description": "BYOB reader support",
+          "tags": [
+            "web-features:webtransport"
+          ],
           "support": {
             "chrome": {
               "version_added": "109"
@@ -234,7 +255,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -271,7 +293,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -308,7 +331,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -321,6 +345,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/WebTransport/congestionControl",
           "spec_url": "https://w3c.github.io/webtransport/#dom-webtransport-congestioncontrol",
+          "tags": [
+            "web-features:webtransport"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -342,7 +369,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -379,7 +407,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -389,8 +418,11 @@
         },
         "options_sendOrder_parameter": {
           "__compat": {
-            "description": "<code>options.sendOrder</code> parameter",
+            "description": "`options.sendOrder` parameter",
             "spec_url": "https://w3c.github.io/webtransport/#dom-webtransportsendstreamoptions-sendorder",
+            "tags": [
+              "web-features:webtransport"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -412,7 +444,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -438,7 +471,7 @@
             "firefox": {
               "version_added": "114",
               "partial_implementation": true,
-              "notes": "Returns a <code>WritableStream</code> instead of a <code>WebTransportSendStream</code>."
+              "notes": "Returns a `WritableStream` instead of a `WebTransportSendStream`."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -452,7 +485,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -463,6 +497,9 @@
         "byob_readers": {
           "__compat": {
             "description": "BYOB reader support",
+            "tags": [
+              "web-features:webtransport"
+            ],
             "support": {
               "chrome": {
                 "version_added": "109"
@@ -484,7 +521,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -495,8 +533,11 @@
         },
         "options_sendOrder_parameter": {
           "__compat": {
-            "description": "<code>options.sendOrder</code> parameter",
+            "description": "`options.sendOrder` parameter",
             "spec_url": "https://w3c.github.io/webtransport/#dom-webtransportsendstreamoptions-sendorder",
+            "tags": [
+              "web-features:webtransport"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -518,7 +559,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -556,7 +598,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -569,6 +612,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/WebTransport/getStats",
           "spec_url": "https://w3c.github.io/webtransport/#dom-webtransport-getstats",
+          "tags": [
+            "web-features:webtransport"
+          ],
           "support": {
             "chrome": {
               "version_added": false,
@@ -593,7 +639,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -630,7 +677,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -667,7 +715,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -704,7 +753,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -717,6 +767,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/WebTransport/reliability",
           "spec_url": "https://w3c.github.io/webtransport/#dom-webtransport-reliability",
+          "tags": [
+            "web-features:webtransport"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -738,7 +791,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,

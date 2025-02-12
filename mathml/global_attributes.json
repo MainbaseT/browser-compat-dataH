@@ -24,9 +24,7 @@
               "version_added": false
             },
             "oculus": "mirror",
-            "opera": {
-              "version_added": false
-            },
+            "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
               "version_added": "8",
@@ -34,7 +32,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -59,25 +58,24 @@
             "firefox": {
               "version_added": "83",
               "impl_url": "https://hg.mozilla.org/mozilla-central/rev/60a72a6c7c1d",
-              "notes": "Prior to Firefox 83, the attribute was only accepted on a few elements, as specified in MathML 3, and was not implemented via <code>math-style</code>."
+              "notes": "Prior to Firefox 83, the attribute was only accepted on a few elements, as specified in MathML 3, and was not implemented via `math-style`."
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": false
             },
             "oculus": "mirror",
-            "opera": {
-              "version_added": false
-            },
+            "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
               "version_added": "14",
               "impl_url": "https://trac.webkit.org/changeset/267578",
-              "notes": "Since Safari 14.1, this attribute is implemented via <code>math-style</code>."
+              "notes": "Since Safari 14.1, this attribute is implemented via `math-style`."
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -89,6 +87,9 @@
       "href": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Global_attributes/href",
+          "tags": [
+            "web-features:mathml"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -112,7 +113,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -125,9 +127,6 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Global_attributes/mathbackground",
           "spec_url": "https://w3c.github.io/mathml-core/#dfn-mathbackground",
-          "tags": [
-            "web-features:mathml"
-          ],
           "support": {
             "chrome": {
               "version_added": "109"
@@ -144,9 +143,7 @@
               "version_added": false
             },
             "oculus": "mirror",
-            "opera": {
-              "version_added": false
-            },
+            "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
               "version_added": "5",
@@ -157,7 +154,8 @@
               "impl_url": "https://trac.webkit.org/changeset/62968"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -170,9 +168,6 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Global_attributes/mathcolor",
           "spec_url": "https://w3c.github.io/mathml-core/#dfn-mathcolor",
-          "tags": [
-            "web-features:mathml"
-          ],
           "support": {
             "chrome": {
               "version_added": "109"
@@ -189,9 +184,7 @@
               "version_added": false
             },
             "oculus": "mirror",
-            "opera": {
-              "version_added": false
-            },
+            "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
               "version_added": "5",
@@ -202,7 +195,8 @@
               "impl_url": "https://trac.webkit.org/changeset/62968"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -215,9 +209,6 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Global_attributes/mathsize",
           "spec_url": "https://w3c.github.io/mathml-core/#dfn-mathsize",
-          "tags": [
-            "web-features:mathml"
-          ],
           "support": {
             "chrome": {
               "version_added": "109"
@@ -240,9 +231,7 @@
               "version_added": false
             },
             "oculus": "mirror",
-            "opera": {
-              "version_added": false
-            },
+            "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
               "version_added": "5",
@@ -250,7 +239,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -260,8 +250,8 @@
         },
         "named_spaces": {
           "__compat": {
-            "description": "Named spaces (e.g. <code>thinmathspace</code> to mean 3/18em)",
-            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Attribute/Values#legacy_mathml_lengths",
+            "description": "Named spaces (e.g. `thinmathspace` to mean 3/18em)",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Values",
             "support": {
               "chrome": {
                 "version_added": false
@@ -283,7 +273,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -295,7 +286,7 @@
         "nonzero_unitless_values": {
           "__compat": {
             "description": "Nonzero unitless values (e.g. 5 to mean 500%)",
-            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Attribute/Values#legacy_mathml_lengths",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Values",
             "support": {
               "chrome": {
                 "version_added": false
@@ -318,7 +309,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -329,7 +321,7 @@
         },
         "small_normal_big": {
           "__compat": {
-            "description": "<code>small</code>, <code>normal</code>, <code>big</code> values",
+            "description": "`small`, `normal`, `big` values",
             "support": {
               "chrome": {
                 "version_added": false
@@ -352,7 +344,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -380,7 +373,7 @@
               "impl_url": "https://hg.mozilla.org/mozilla-central/rev/3b30c8db537c",
               "notes": [
                 "Prior to Firefox 70, the attribute was only accepted on a few elements, as specified in MathML 3.",
-                "Implementation does not rely on the CSS approach described in MathML Core (via <code>math-depth</code> and <code>font-size: math</code>)."
+                "Implementation does not rely on the CSS approach described in MathML Core (via `math-depth` and `font-size: math`)."
               ]
             },
             "firefox_android": "mirror",
@@ -388,16 +381,15 @@
               "version_added": false
             },
             "oculus": "mirror",
-            "opera": {
-              "version_added": false
-            },
+            "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
               "version_added": false
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

@@ -66,7 +66,7 @@ const processApiData = (
       'constructor',
       path,
       data,
-      `<code>${apiName}()</code> constructor`,
+      `\`${apiName}()\` constructor`,
       errors,
     );
   } else if (featureName.endsWith('_event')) {
@@ -74,7 +74,7 @@ const processApiData = (
       'event',
       path,
       data,
-      `<code>${featureName.replace('_event', '')}</code> event`,
+      `\`${featureName.replace('_event', '')}\` event`,
       errors,
     );
   } else if (featureName.endsWith('_permission')) {
@@ -82,7 +82,7 @@ const processApiData = (
       'permission',
       path,
       data,
-      `<code>${featureName.replace('_permission', '')}</code> permission`,
+      `\`${featureName.replace('_permission', '')}\` permission`,
       errors,
     );
   } else if (featureName == 'secure_context_required') {
@@ -116,6 +116,15 @@ export const processData = (
     processApiData(data, path, errors);
   }
 
+  if (data.description === `\`${path.split('.').at(-1)}\``) {
+    errors.push({
+      ruleName: 'redundant',
+      path,
+      actual: data.description,
+      expected: '',
+    });
+  }
+
   if (data.description) {
     errors.push(...validateHTML(data.description));
   }
@@ -141,11 +150,14 @@ export default {
 
     for (const error of errors) {
       if (typeof error === 'string') {
-        logger.error(chalk`Description → ${error}`);
+        logger.error(chalk`{red ${error}}`);
       } else {
-        logger.error(chalk`{red Incorrect ${error.ruleName} description for {bold ${error.path}}
+        logger.error(
+          chalk`{red Incorrect ${error.ruleName} description for {bold ${error.path}}
       Actual: {yellow "${error.actual}"}
-      Expected: {green "${error.expected}"}}`);
+      Expected: {green "${error.expected}"}}`,
+          { fixable: true },
+        );
       }
     }
   },

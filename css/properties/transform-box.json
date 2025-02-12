@@ -6,7 +6,7 @@
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/transform-box",
           "spec_url": "https://drafts.csswg.org/css-transforms/#transform-box",
           "tags": [
-            "web-features:transforms2d"
+            "web-features:transform-box"
           ],
           "support": {
             "chrome": {
@@ -29,7 +29,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -40,6 +41,9 @@
         "border-box": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-transforms/#valdef-transform-box-border-box",
+            "tags": [
+              "web-features:transform-box"
+            ],
             "support": {
               "chrome": {
                 "version_added": "118"
@@ -61,7 +65,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -73,6 +78,9 @@
         "content-box": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-transforms/#valdef-transform-box-content-box",
+            "tags": [
+              "web-features:transform-box"
+            ],
             "support": {
               "chrome": {
                 "version_added": "118"
@@ -94,7 +102,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -106,6 +115,9 @@
         "fill-box": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-transforms/#valdef-transform-box-fill-box",
+            "tags": [
+              "web-features:transform-box"
+            ],
             "support": {
               "chrome": {
                 "version_added": "64"
@@ -127,7 +139,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -139,6 +152,9 @@
         "stroke-box": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-transforms/#valdef-transform-box-stroke-box",
+            "tags": [
+              "web-features:transform-box"
+            ],
             "support": {
               "chrome": {
                 "version_added": "118"
@@ -160,7 +176,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -172,6 +189,9 @@
         "view-box": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-transforms/#valdef-transform-box-view-box",
+            "tags": [
+              "web-features:transform-box"
+            ],
             "support": {
               "chrome": {
                 "version_added": "64"
@@ -193,7 +213,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

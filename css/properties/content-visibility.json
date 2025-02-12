@@ -15,7 +15,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "124"
+              "version_added": "125"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -25,11 +25,12 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": "preview"
+              "version_added": "18"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -40,6 +41,9 @@
         "auto": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-contain/#valdef-content-visibility-auto",
+            "tags": [
+              "web-features:content-visibility"
+            ],
             "support": {
               "chrome": {
                 "version_added": "85"
@@ -47,7 +51,7 @@
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": false
+                "version_added": "125"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -57,14 +61,18 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "18",
+                "impl_url": "https://webkit.org/b/283846",
+                "partial_implementation": true,
+                "notes": "Skipped content is not findable via find-in-page."
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }
@@ -73,6 +81,9 @@
         "hidden": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-contain/#valdef-content-visibility-hidden",
+            "tags": [
+              "web-features:content-visibility"
+            ],
             "support": {
               "chrome": {
                 "version_added": "85"
@@ -80,7 +91,7 @@
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": false
+                "version_added": "125"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -90,14 +101,15 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "18"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }
@@ -105,8 +117,11 @@
         },
         "is_transitionable": {
           "__compat": {
-            "description": "Transitionable when setting <code>transition-behavior: allow-discrete</code>",
-            "spec_url": "https://drafts.csswg.org/css-contain-3/#content-visibility-animation",
+            "description": "Transitionable when setting `transition-behavior: allow-discrete`",
+            "spec_url": "https://drafts.csswg.org/css-contain/#content-visibility-animation",
+            "tags": [
+              "web-features:display-animation"
+            ],
             "support": {
               "chrome": {
                 "version_added": "117"
@@ -124,14 +139,15 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "18"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }
@@ -139,8 +155,11 @@
         },
         "keyframe_animatable": {
           "__compat": {
-            "description": "<code>@keyframe</code> animatable",
-            "spec_url": "https://drafts.csswg.org/css-contain-3/#content-visibility-animation",
+            "description": "`@keyframe` animatable",
+            "spec_url": "https://drafts.csswg.org/css-contain/#content-visibility-animation",
+            "tags": [
+              "web-features:display-animation"
+            ],
             "support": {
               "chrome": {
                 "version_added": "116"
@@ -158,14 +177,15 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": "preview"
+                "version_added": "18"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }
@@ -174,6 +194,9 @@
         "visible": {
           "__compat": {
             "spec_url": "https://drafts.csswg.org/css-contain/#valdef-content-visibility-visible",
+            "tags": [
+              "web-features:content-visibility"
+            ],
             "support": {
               "chrome": {
                 "version_added": "85"
@@ -181,7 +204,7 @@
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": false
+                "version_added": "125"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -191,14 +214,15 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "18"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }

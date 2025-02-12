@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCRtpTransceiver",
         "spec_url": "https://w3c.github.io/webrtc-pc/#rtcrtptransceiver-interface",
+        "tags": [
+          "web-features:webrtc"
+        ],
         "support": {
           "chrome": {
             "version_added": "69"
@@ -27,7 +30,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -39,6 +43,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCRtpTransceiver/currentDirection",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-currentdirection",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -60,7 +67,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -70,8 +78,11 @@
         },
         "stopped_value": {
           "__compat": {
-            "description": "<code>\"stopped\"</code> value",
+            "description": "`\"stopped\"` value",
             "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiverdirection-stopped",
+            "tags": [
+              "web-features:webrtc"
+            ],
             "support": {
               "chrome": {
                 "version_added": "103"
@@ -93,7 +104,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -107,6 +119,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCRtpTransceiver/direction",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-direction",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -128,7 +143,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -138,8 +154,11 @@
         },
         "value_stopped": {
           "__compat": {
-            "description": "<code>\"stopped\"</code> value",
+            "description": "`\"stopped\"` value",
             "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiverdirection-stopped",
+            "tags": [
+              "web-features:webrtc"
+            ],
             "support": {
               "chrome": {
                 "version_added": "103"
@@ -161,7 +180,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -171,10 +191,87 @@
           }
         }
       },
+      "getHeaderExtensionsToNegotiate": {
+        "__compat": {
+          "spec_url": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtptransceiver-getheaderextensionstonegotiate",
+          "tags": [
+            "web-features:webrtc"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "117"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "getNegotiatedHeaderExtensions": {
+        "__compat": {
+          "spec_url": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtptransceiver-getnegotiatedheaderextensions",
+          "tags": [
+            "web-features:webrtc"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "117"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
       "mid": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCRtpTransceiver/mid",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtptransceiver-mid",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -196,7 +293,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -209,6 +307,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCRtpTransceiver/receiver",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-receiver",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -230,7 +331,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -243,6 +345,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCRtpTransceiver/sender",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-sender",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "69"
@@ -264,7 +369,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -275,9 +381,12 @@
       },
       "setCodecPreferences": {
         "__compat": {
-          "description": "<code>setCodecPreferences()</code>",
+          "description": "`setCodecPreferences()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCRtpTransceiver/setCodecPreferences",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-setcodecpreferences",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "76"
@@ -285,7 +394,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "128"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -299,7 +408,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -308,11 +418,51 @@
           }
         }
       },
+      "setHeaderExtensionsToNegotiate": {
+        "__compat": {
+          "spec_url": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtptransceiver-setheaderextensionstonegotiate",
+          "tags": [
+            "web-features:webrtc"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "117"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
       "stop": {
         "__compat": {
-          "description": "<code>stop()</code>",
+          "description": "`stop()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/RTCRtpTransceiver/stop",
           "spec_url": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-stop",
+          "tags": [
+            "web-features:webrtc"
+          ],
           "support": {
             "chrome": {
               "version_added": "88"
@@ -334,7 +484,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -367,7 +518,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

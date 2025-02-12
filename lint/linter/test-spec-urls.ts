@@ -23,6 +23,9 @@ const specsExceptions = [
   // Remove if it is in the main ECMA spec
   'https://github.com/tc39/proposal-regexp-legacy-features/',
 
+  // Remove once tc39/ecma262#3221 is merged
+  'https://github.com/tc39/proposal-regexp-modifiers',
+
   // See https://github.com/w3c/browser-specs/issues/305
   // Features with this URL need to be checked after some time
   // if they have been integrated into a real spec
@@ -36,10 +39,13 @@ const specsExceptions = [
   'https://github.com/WebAssembly/threads/blob/main/proposal',
   'https://github.com/WebAssembly/relaxed-simd/blob/main/proposals',
   'https://github.com/WebAssembly/multi-memory/blob/main/proposals',
+  'https://github.com/WebAssembly/memory64/blob/main/proposals/memory64/Overview.md',
+  'https://github.com/WebAssembly/js-string-builtins/blob/main/proposals/js-string-builtins/Overview.md',
+  'https://github.com/WebAssembly/function-references/blob/main/proposals/function-references/Overview.md',
 ];
 
 const allowedSpecURLs = [
-  ...specData
+  ...(specData
     .filter((spec) => spec.standing == 'good')
     .map((spec) => [
       spec.url,
@@ -48,7 +54,7 @@ const allowedSpecURLs = [
       spec.series.nightlyUrl,
     ])
     .flat()
-    .filter((url) => !!url),
+    .filter((url) => !!url) as string[]),
   ...specsExceptions,
 ];
 

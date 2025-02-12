@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/CookieStore",
         "spec_url": "https://wicg.github.io/cookie-store/#CookieStore",
+        "tags": [
+          "web-features:cookie-store"
+        ],
         "support": {
           "chrome": {
             "version_added": "87"
@@ -11,8 +14,7 @@
           "chrome_android": "mirror",
           "edge": "mirror",
           "firefox": {
-            "version_added": false,
-            "impl_url": "https://bugzil.la/1475599"
+            "version_added": "136"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -27,7 +29,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -37,11 +40,14 @@
       },
       "change_event": {
         "__compat": {
-          "description": "<code>change</code> event",
+          "description": "`change` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CookieStore/change_event",
           "spec_url": [
             "https://wicg.github.io/cookie-store/#intro-monitor",
             "https://wicg.github.io/cookie-store/#dom-cookiestore-onchange"
+          ],
+          "tags": [
+            "web-features:cookie-store"
           ],
           "support": {
             "chrome": {
@@ -50,7 +56,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "136"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -64,7 +70,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -77,6 +84,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CookieStore/delete",
           "spec_url": "https://wicg.github.io/cookie-store/#dom-cookiestore-delete",
+          "tags": [
+            "web-features:cookie-store"
+          ],
           "support": {
             "chrome": {
               "version_added": "87"
@@ -84,7 +94,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "136"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -98,7 +108,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -108,8 +119,11 @@
         },
         "partitioned_option": {
           "__compat": {
-            "description": "<code>partitioned</code> option",
+            "description": "`partitioned` option",
             "spec_url": "https://wicg.github.io/cookie-store/#dom-cookiestoredeleteoptions-partitioned",
+            "tags": [
+              "web-features:partitioned-cookies"
+            ],
             "support": {
               "chrome": {
                 "version_added": "114"
@@ -117,7 +131,7 @@
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": false
+                "version_added": "136"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -131,10 +145,11 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }
@@ -145,6 +160,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CookieStore/get",
           "spec_url": "https://wicg.github.io/cookie-store/#dom-cookiestore-get",
+          "tags": [
+            "web-features:cookie-store"
+          ],
           "support": {
             "chrome": {
               "version_added": "87"
@@ -152,7 +170,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "136"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -166,7 +184,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -176,8 +195,11 @@
         },
         "partitioned_return_property": {
           "__compat": {
-            "description": "<code>partitioned</code> in return value",
+            "description": "`partitioned` in return value",
             "spec_url": "https://wicg.github.io/cookie-store/#dom-cookielistitem-partitioned",
+            "tags": [
+              "web-features:partitioned-cookies"
+            ],
             "support": {
               "chrome": {
                 "version_added": "114"
@@ -199,7 +221,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -213,6 +236,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CookieStore/getAll",
           "spec_url": "https://wicg.github.io/cookie-store/#dom-cookiestore-getall",
+          "tags": [
+            "web-features:cookie-store"
+          ],
           "support": {
             "chrome": {
               "version_added": "87"
@@ -220,7 +246,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "136"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -234,7 +260,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -244,8 +271,11 @@
         },
         "partitioned_return_property": {
           "__compat": {
-            "description": "<code>partitioned</code> in return value",
+            "description": "`partitioned` in return value",
             "spec_url": "https://wicg.github.io/cookie-store/#dom-cookielistitem-partitioned",
+            "tags": [
+              "web-features:partitioned-cookies"
+            ],
             "support": {
               "chrome": {
                 "version_added": "114"
@@ -267,7 +297,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -281,6 +312,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/CookieStore/set",
           "spec_url": "https://wicg.github.io/cookie-store/#dom-cookiestore-set",
+          "tags": [
+            "web-features:cookie-store"
+          ],
           "support": {
             "chrome": {
               "version_added": "87"
@@ -288,7 +322,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "136"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -302,7 +336,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -312,8 +347,11 @@
         },
         "partitioned_option": {
           "__compat": {
-            "description": "<code>partitioned</code> option",
+            "description": "`partitioned` option",
             "spec_url": "https://wicg.github.io/cookie-store/#dom-cookieinit-partitioned",
+            "tags": [
+              "web-features:partitioned-cookies"
+            ],
             "support": {
               "chrome": {
                 "version_added": "114"
@@ -321,7 +359,7 @@
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": false
+                "version_added": "136"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -335,10 +373,11 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }

@@ -44,7 +44,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -96,7 +97,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -149,7 +151,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -161,8 +164,11 @@
       "private_class_fields": {
         "__compat": {
           "description": "Private class fields",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/Private_class_fields",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/Private_properties",
           "spec_url": "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#prod-PrivateIdentifier",
+          "tags": [
+            "web-features:class-syntax"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -190,7 +196,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -202,8 +209,11 @@
       "private_class_fields_in": {
         "__compat": {
           "description": "Private class fields 'in'",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/Private_class_fields",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/Private_properties",
           "spec_url": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-00OK517S",
+          "tags": [
+            "web-features:class-syntax"
+          ],
           "support": {
             "chrome": {
               "version_added": "91"
@@ -231,7 +241,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -243,8 +254,11 @@
       "private_class_methods": {
         "__compat": {
           "description": "Private class methods",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/Private_class_fields",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/Private_properties",
           "spec_url": "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#prod-PrivateIdentifier",
+          "tags": [
+            "web-features:class-syntax"
+          ],
           "support": {
             "chrome": {
               "version_added": "84"
@@ -272,7 +286,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -284,8 +299,11 @@
       "public_class_fields": {
         "__compat": {
           "description": "Public class fields",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/Class_elements#Public_fields",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/Public_class_fields",
           "spec_url": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#prod-FieldDefinition",
+          "tags": [
+            "web-features:class-syntax"
+          ],
           "support": {
             "chrome": {
               "version_added": "72"
@@ -310,18 +328,25 @@
             "opera_android": "mirror",
             "safari": [
               {
-                "version_added": "14.1"
+                "version_added": "16"
+              },
+              {
+                "version_added": "14.1",
+                "version_removed": "16",
+                "partial_implementation": true,
+                "notes": "Parentheses in field initializers can lead to `ReferenceError`s. See [bug 236843](https://webkit.org/b/236843)."
               },
               {
                 "version_added": "14",
                 "version_removed": "14.1",
                 "partial_implementation": true,
-                "notes": "Doesn't support public static fields. See <a href='https://webkit.org/b/194095'>bug 194095</a>."
+                "notes": "Doesn't support public static fields. See [bug 194095](https://webkit.org/b/194095)."
               }
             ],
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -374,7 +399,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -386,8 +412,11 @@
       "static_class_fields": {
         "__compat": {
           "description": "Static class fields",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/Class_fields",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/Public_class_fields",
           "spec_url": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#prod-FieldDefinition",
+          "tags": [
+            "web-features:class-syntax"
+          ],
           "support": {
             "chrome": {
               "version_added": "72"
@@ -415,7 +444,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -427,8 +457,11 @@
       "static_initialization_blocks": {
         "__compat": {
           "description": "Class static initialization blocks",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/Class_static_initialization_blocks",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/Static_initialization_blocks",
           "spec_url": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#prod-ClassStaticBlock",
+          "tags": [
+            "web-features:class-syntax"
+          ],
           "support": {
             "chrome": {
               "version_added": "94"
@@ -456,7 +489,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

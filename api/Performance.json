@@ -9,6 +9,9 @@
           "https://w3c.github.io/resource-timing/#sec-extensions-performance-interface",
           "https://w3c.github.io/user-timing/#extensions-performance-interface"
         ],
+        "tags": [
+          "web-features:performance"
+        ],
         "support": {
           "chrome": {
             "version_added": "6"
@@ -27,11 +30,17 @@
           "ie": {
             "version_added": "9"
           },
-          "nodejs": {
-            "version_added": "8.5.0",
-            "partial_implementation": true,
-            "notes": "Exported from the <code>perf_hooks</code> module"
-          },
+          "nodejs": [
+            {
+              "version_added": "18.8.0"
+            },
+            {
+              "version_added": "8.5.0",
+              "version_removed": "18.8.0",
+              "partial_implementation": true,
+              "notes": "Only available as an internal instance."
+            }
+          ],
           "oculus": "mirror",
           "opera": "mirror",
           "opera_android": "mirror",
@@ -44,7 +53,8 @@
           "samsunginternet_android": "mirror",
           "webview_android": {
             "version_added": "≤37"
-          }
+          },
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -56,6 +66,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Performance/clearMarks",
           "spec_url": "https://w3c.github.io/user-timing/#dom-performance-clearmarks",
+          "tags": [
+            "web-features:performance"
+          ],
           "support": {
             "chrome": [
               {
@@ -98,7 +111,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -111,6 +125,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Performance/clearMeasures",
           "spec_url": "https://w3c.github.io/user-timing/#dom-performance-clearmeasures",
+          "tags": [
+            "web-features:performance"
+          ],
           "support": {
             "chrome": [
               {
@@ -153,7 +170,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -166,6 +184,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Performance/clearResourceTimings",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performance-clearresourcetimings",
+          "tags": [
+            "web-features:performance"
+          ],
           "support": {
             "chrome": [
               {
@@ -191,9 +212,15 @@
             "ie": {
               "version_added": "10"
             },
-            "nodejs": {
-              "version_added": false
-            },
+            "nodejs": [
+              {
+                "version_added": "18.2.0"
+              },
+              {
+                "version_added": "16.17.0",
+                "version_removed": "17.0.0"
+              }
+            ],
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
@@ -202,7 +229,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -215,6 +243,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Performance/eventCounts",
           "spec_url": "https://w3c.github.io/event-timing/#dom-performance-eventcounts",
+          "tags": [
+            "web-features:event-timing"
+          ],
           "support": {
             "chrome": {
               "version_added": "85"
@@ -242,7 +273,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -255,6 +287,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Performance/getEntries",
           "spec_url": "https://w3c.github.io/performance-timeline/#dom-performance-getentries",
+          "tags": [
+            "web-features:performance"
+          ],
           "support": {
             "chrome": [
               {
@@ -293,7 +328,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "4.4"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -306,6 +342,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Performance/getEntriesByName",
           "spec_url": "https://w3c.github.io/performance-timeline/#dom-performance-getentriesbyname",
+          "tags": [
+            "web-features:performance"
+          ],
           "support": {
             "chrome": [
               {
@@ -344,7 +383,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "4.4"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -357,6 +397,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Performance/getEntriesByType",
           "spec_url": "https://w3c.github.io/performance-timeline/#dom-performance-getentriesbytype",
+          "tags": [
+            "web-features:performance"
+          ],
           "support": {
             "chrome": [
               {
@@ -395,7 +438,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "4.4"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -408,6 +452,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Performance/mark",
           "spec_url": "https://w3c.github.io/user-timing/#dom-performance-mark",
+          "tags": [
+            "web-features:performance"
+          ],
           "support": {
             "chrome": [
               {
@@ -450,7 +497,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -460,14 +508,17 @@
         },
         "markOptions_parameter": {
           "__compat": {
-            "description": "<code>markOptions</code> parameter",
+            "description": "`markOptions` parameter",
+            "tags": [
+              "web-features:performance"
+            ],
             "support": {
               "chrome": {
                 "version_added": "78"
               },
               "chrome_android": "mirror",
               "deno": {
-                "version_added": false
+                "version_added": "1.2"
               },
               "edge": "mirror",
               "firefox": {
@@ -478,7 +529,7 @@
                 "version_added": false
               },
               "nodejs": {
-                "version_added": false
+                "version_added": "16.0.0"
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -488,7 +539,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -499,14 +551,17 @@
         },
         "returns_performancemark": {
           "__compat": {
-            "description": "Returns <code>PerformanceMark</code>",
+            "description": "Returns `PerformanceMark`",
+            "tags": [
+              "web-features:performance"
+            ],
             "support": {
               "chrome": {
                 "version_added": "78"
               },
               "chrome_android": "mirror",
               "deno": {
-                "version_added": false
+                "version_added": "1.2"
               },
               "edge": "mirror",
               "firefox": {
@@ -517,7 +572,7 @@
                 "version_added": false
               },
               "nodejs": {
-                "version_added": false
+                "version_added": "8.5.0"
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -527,7 +582,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -541,6 +597,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Performance/measure",
           "spec_url": "https://w3c.github.io/user-timing/#dom-performance-measure",
+          "tags": [
+            "web-features:performance"
+          ],
           "support": {
             "chrome": [
               {
@@ -583,7 +642,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -593,14 +653,17 @@
         },
         "measureOptions_parameter": {
           "__compat": {
-            "description": "<code>measureOptions</code> parameter",
+            "description": "`measureOptions` parameter",
+            "tags": [
+              "web-features:performance"
+            ],
             "support": {
               "chrome": {
-                "version_added": "78"
+                "version_added": "77"
               },
               "chrome_android": "mirror",
               "deno": {
-                "version_added": false
+                "version_added": "1.2"
               },
               "edge": "mirror",
               "firefox": {
@@ -611,7 +674,7 @@
                 "version_added": false
               },
               "nodejs": {
-                "version_added": false
+                "version_added": "16.0.0"
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -621,7 +684,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -632,14 +696,17 @@
         },
         "returns_performancemeasure": {
           "__compat": {
-            "description": "Returns <code>PerformanceMeasure</code>",
+            "description": "Returns `PerformanceMeasure`",
+            "tags": [
+              "web-features:performance"
+            ],
             "support": {
               "chrome": {
                 "version_added": "78"
               },
               "chrome_android": "mirror",
               "deno": {
-                "version_added": false
+                "version_added": "1.2"
               },
               "edge": "mirror",
               "firefox": {
@@ -650,7 +717,7 @@
                 "version_added": false
               },
               "nodejs": {
-                "version_added": false
+                "version_added": "8.5.0"
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -660,7 +727,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -674,6 +742,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Performance/measureUserAgentSpecificMemory",
           "spec_url": "https://wicg.github.io/performance-measure-memory/#ref-for-dom-performance-measureuseragentspecificmemory⑤",
+          "tags": [
+            "web-features:measure-memory"
+          ],
           "support": {
             "chrome": {
               "version_added": "89"
@@ -701,7 +772,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -742,7 +814,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -755,6 +828,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Performance/navigation",
           "spec_url": "https://w3c.github.io/navigation-timing/#dom-performance-navigation",
+          "tags": [
+            "web-features:performancetiming"
+          ],
           "support": {
             "chrome": {
               "version_added": "10"
@@ -788,7 +864,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -801,6 +878,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Performance/now",
           "spec_url": "https://w3c.github.io/hr-time/#dom-performance-now",
+          "tags": [
+            "web-features:performance"
+          ],
           "support": {
             "chrome": [
               {
@@ -844,7 +924,8 @@
               "version_added": "9"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -855,9 +936,12 @@
       },
       "resourcetimingbufferfull_event": {
         "__compat": {
-          "description": "<code>resourcetimingbufferfull</code> event",
+          "description": "`resourcetimingbufferfull` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Performance/resourcetimingbufferfull_event",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performance-onresourcetimingbufferfull",
+          "tags": [
+            "web-features:performance"
+          ],
           "support": {
             "chrome": [
               {
@@ -882,7 +966,7 @@
               "version_added": false
             },
             "nodejs": {
-              "version_added": false
+              "version_added": "18.8.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -892,7 +976,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -905,6 +990,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Performance/setResourceTimingBufferSize",
           "spec_url": "https://w3c.github.io/resource-timing/#dom-performance-setresourcetimingbuffersize",
+          "tags": [
+            "web-features:performance"
+          ],
           "support": {
             "chrome": [
               {
@@ -931,7 +1019,7 @@
               "version_added": "10"
             },
             "nodejs": {
-              "version_added": false
+              "version_added": "18.8.0"
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -941,7 +1029,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -954,6 +1043,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Performance/timeOrigin",
           "spec_url": "https://w3c.github.io/hr-time/#dom-performance-timeorigin",
+          "tags": [
+            "web-features:performance"
+          ],
           "support": {
             "chrome": {
               "version_added": "62"
@@ -983,7 +1075,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -996,6 +1089,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Performance/timing",
           "spec_url": "https://w3c.github.io/navigation-timing/#dom-performance-timing",
+          "tags": [
+            "web-features:performancetiming"
+          ],
           "support": {
             "chrome": {
               "version_added": "6"
@@ -1032,7 +1128,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1045,6 +1142,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Performance/toJSON",
           "spec_url": "https://w3c.github.io/hr-time/#dom-performance-tojson",
+          "tags": [
+            "web-features:performance"
+          ],
           "support": {
             "chrome": {
               "version_added": "56"
@@ -1074,7 +1174,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

@@ -12,13 +12,29 @@
           "support": {
             "chrome": {
               "version_added": false,
-              "impl_url": "https://crbug.com/v8/11544"
+              "impl_url": "https://crbug.com/42201538"
             },
             "chrome_android": "mirror",
+            "deno": {
+              "version_added": "1.40",
+              "flags": [
+                {
+                  "type": "runtime_flag",
+                  "name": "--unstable-temporal"
+                }
+              ]
+            },
             "edge": "mirror",
             "firefox": {
-              "version_added": false,
-              "impl_url": "https://bugzil.la/1519167"
+              "version_added": "preview",
+              "flags": [
+                {
+                  "type": "preference",
+                  "name": "javascript.options.experimental.temporal",
+                  "value_to_set": "true"
+                }
+              ],
+              "impl_url": "https://bugzil.la/1912511"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -45,7 +61,8 @@
               "version_added": false
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,

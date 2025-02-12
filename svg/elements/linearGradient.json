@@ -4,7 +4,10 @@
       "linearGradient": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Element/linearGradient",
-          "spec_url": "https://svgwg.org/svg2-draft/pservers.html#LinearGradients",
+          "spec_url": "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElement",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -34,7 +37,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -45,10 +49,9 @@
         "gradientTransform": {
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Attribute/gradientTransform",
-            "spec_url": [
-              "https://drafts.csswg.org/css-transforms/#typedef-transform-list",
-              "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementGradientTransformAttribute",
-              "https://svgwg.org/svg2-draft/pservers.html#RadialGradientElementGradientTransformAttribute"
+            "spec_url": "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementGradientTransformAttribute",
+            "tags": [
+              "web-features:svg"
             ],
             "support": {
               "chrome": {
@@ -61,7 +64,7 @@
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": null
+                "version_added": false
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -71,7 +74,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -82,6 +86,11 @@
         },
         "gradientUnits": {
           "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Attribute/gradientUnits",
+            "spec_url": "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementGradientUnitsAttribute",
+            "tags": [
+              "web-features:svg"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -93,7 +102,7 @@
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": null
+                "version_added": false
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -103,7 +112,48 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "href": {
+          "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Attribute/href",
+            "spec_url": "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementHrefAttribute",
+            "tags": [
+              "web-features:svg"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "50"
+              },
+              "chrome_android": "mirror",
+              "edge": {
+                "version_added": "12"
+              },
+              "firefox": {
+                "version_added": "51"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": "≤11"
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "12.1"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -115,9 +165,9 @@
         "spreadMethod": {
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Attribute/spreadMethod",
-            "spec_url": [
-              "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementSpreadMethodAttribute",
-              "https://svgwg.org/svg2-draft/pservers.html#RadialGradientElementSpreadMethodAttribute"
+            "spec_url": "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementSpreadMethodAttribute",
+            "tags": [
+              "web-features:svg"
             ],
             "support": {
               "chrome": {
@@ -130,7 +180,7 @@
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": null
+                "version_added": false
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -140,7 +190,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -151,6 +202,11 @@
         },
         "x1": {
           "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Attribute/x1",
+            "spec_url": "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementX1Attribute",
+            "tags": [
+              "web-features:svg"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -162,7 +218,7 @@
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": null
+                "version_added": false
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -172,7 +228,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -183,6 +240,11 @@
         },
         "x2": {
           "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Attribute/x2",
+            "spec_url": "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementX2Attribute",
+            "tags": [
+              "web-features:svg"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -194,7 +256,7 @@
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": null
+                "version_added": false
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -204,7 +266,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -215,7 +278,11 @@
         },
         "xlink_href": {
           "__compat": {
-            "description": "<code>xlink:href</code>",
+            "description": "`xlink:href`",
+            "spec_url": "https://svgwg.org/svg2-draft/linking.html#XLinkHrefAttribute",
+            "tags": [
+              "web-features:svg-discouraged"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -227,7 +294,7 @@
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": null
+                "version_added": false
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -237,7 +304,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -248,6 +316,11 @@
         },
         "y1": {
           "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Attribute/y1",
+            "spec_url": "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementY1Attribute",
+            "tags": [
+              "web-features:svg"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -259,7 +332,7 @@
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": null
+                "version_added": false
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -269,7 +342,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -280,6 +354,11 @@
         },
         "y2": {
           "__compat": {
+            "mdn_url": "https://developer.mozilla.org/docs/Web/SVG/Attribute/y2",
+            "spec_url": "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementY2Attribute",
+            "tags": [
+              "web-features:svg"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -291,7 +370,7 @@
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": null
+                "version_added": false
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -301,7 +380,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

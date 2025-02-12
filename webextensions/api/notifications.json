@@ -17,9 +17,7 @@
             "firefox_android": {
               "version_added": "48"
             },
-            "opera": {
-              "version_added": "25"
-            },
+            "opera": "mirror",
             "safari": {
               "version_added": false
             },
@@ -31,7 +29,7 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/notifications/NotificationOptions",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "28"
               },
               "edge": {
                 "version_added": "17"
@@ -53,11 +51,9 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "38"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": false,
                   "notes": "Specifying this option doesn't throw an error, but its value is ignored."
@@ -75,11 +71,9 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "≤65"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": false
                 },
@@ -122,11 +116,9 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "≤65"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": false,
                   "notes": "Specifying this option doesn't throw an error, but its value is ignored."
@@ -144,11 +136,9 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "≤65"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": false,
                   "notes": "Specifying this option doesn't throw an error, but its value is ignored."
@@ -192,13 +182,10 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true,
+                  "version_added": "≤65",
                   "notes": "On macOS only the first item is shown."
                 },
-                "edge": {
-                  "version_added": "79",
-                  "notes": "On macOS only the first item is shown."
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": false,
                   "notes": "Specifying this option doesn't throw an error, but its value is ignored."
@@ -219,11 +206,9 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "≤65"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": false,
                   "notes": "Specifying this option doesn't throw an error, but its value is ignored."
@@ -288,7 +273,7 @@
             "mdn_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/notifications/TemplateType",
             "support": {
               "chrome": {
-                "version_added": true
+                "version_added": "28"
               },
               "edge": {
                 "version_added": "17"
@@ -301,10 +286,7 @@
                 "version_added": "48",
                 "notes": "Only the 'basic' type is supported."
               },
-              "opera": {
-                "version_added": true,
-                "notes": "Only the 'basic' type is supported."
-              },
+              "opera": "mirror",
               "safari": {
                 "version_added": false
               },
@@ -456,9 +438,7 @@
               "firefox_android": {
                 "version_added": "48"
               },
-              "opera": {
-                "version_added": "25"
-              },
+              "opera": "mirror",
               "safari": {
                 "version_added": false
               },
@@ -469,11 +449,9 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "28"
                 },
-                "edge": {
-                  "version_added": "79"
-                },
+                "edge": "mirror",
                 "firefox": {
                   "version_added": false
                 },

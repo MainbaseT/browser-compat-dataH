@@ -7,7 +7,7 @@
           "support": {
             "chrome": {
               "alternative_name": "contextMenus",
-              "version_added": true
+              "version_added": "6"
             },
             "edge": "mirror",
             "firefox": [
@@ -38,7 +38,7 @@
             "support": {
               "chrome": {
                 "alternative_name": "contextMenus.ACTION_MENU_TOP_LEVEL_LIMIT",
-                "version_added": true
+                "version_added": "38"
               },
               "edge": "mirror",
               "firefox": [
@@ -70,7 +70,7 @@
             "support": {
               "chrome": {
                 "alternative_name": "contextMenus.ContextType",
-                "version_added": true
+                "version_added": "26"
               },
               "edge": "mirror",
               "firefox": [
@@ -100,20 +100,25 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "85",
+                  "notes": "Available for use in Manifest V3 or later."
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": "109"
+                  "version_added": "109",
+                  "notes": "Available for use in Manifest V3 or later."
                 },
                 "firefox_android": {
                   "version_added": false
                 },
                 "opera": "mirror",
                 "safari": {
-                  "version_added": false
+                  "version_added": "15.4",
+                  "notes": "Available for use in Manifest V3 or later."
                 },
-                "safari_ios": "mirror"
+                "safari_ios": {
+                  "version_added": false
+                }
               }
             }
           },
@@ -122,7 +127,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/825443"
+                  "impl_url": "https://crbug.com/41378677"
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -143,19 +148,24 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "38",
+                  "notes": "Available for use in Manifest V2 only."
                 },
                 "edge": "mirror",
                 "firefox": {
                   "version_added": "53",
-                  "notes": "'The 'editable' context does not include password fields. Use the 'password' context for this."
+                  "notes": [
+                    "Available for use in Manifest V2 only.",
+                    "'The `editable` context does not include password fields. Use the `password` context for this."
+                  ]
                 },
                 "firefox_android": {
                   "version_added": false
                 },
                 "opera": "mirror",
                 "safari": {
-                  "version_added": "14"
+                  "version_added": "14",
+                  "notes": "Available for use in Manifest V2 only."
                 },
                 "safari_ios": {
                   "version_added": false
@@ -167,7 +177,7 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "26"
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -188,7 +198,8 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "38",
+                  "notes": "Available for use in Manifest V2 only."
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -199,7 +210,8 @@
                 },
                 "opera": "mirror",
                 "safari": {
-                  "version_added": "14"
+                  "version_added": "14",
+                  "notes": "Available for use in Manifest V2 only."
                 },
                 "safari_ios": {
                   "version_added": false
@@ -243,9 +255,11 @@
                 },
                 "opera": "mirror",
                 "safari": {
-                  "version_added": false
+                  "version_added": "18"
                 },
-                "safari_ios": "mirror"
+                "safari_ios": {
+                  "version_added": false
+                }
               }
             }
           },
@@ -258,7 +272,7 @@
                 "edge": "mirror",
                 "firefox": {
                   "version_added": "56",
-                  "notes": "Only available at <code>menus.ContextType</code>, not at <code>contextMenus.ContextType</code>."
+                  "notes": "Only available at `menus.ContextType`, not at `contextMenus.ContextType`."
                 },
                 "firefox_android": {
                   "version_added": false
@@ -278,7 +292,7 @@
             "support": {
               "chrome": {
                 "alternative_name": "contextMenus.ItemType",
-                "version_added": true
+                "version_added": "44"
               },
               "edge": "mirror",
               "firefox": [
@@ -310,7 +324,7 @@
             "support": {
               "chrome": {
                 "alternative_name": "contextMenus.OnClickData",
-                "version_added": true
+                "version_added": "7"
               },
               "edge": "mirror",
               "firefox": [
@@ -417,9 +431,11 @@
                 },
                 "opera": "mirror",
                 "safari": {
-                  "version_added": false
+                  "version_added": "14"
                 },
-                "safari_ios": "mirror"
+                "safari_ios": {
+                  "version_added": false
+                }
               }
             }
           },
@@ -448,12 +464,12 @@
             "__compat": {
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "≤95"
                 },
                 "edge": "mirror",
                 "firefox": {
                   "version_added": "48",
-                  "notes": "Between Firefox 59 and Firefox 94, this returns a post-redirect URL rather than the raw value of the <code>src</code> attribute of the clicked element."
+                  "notes": "Between Firefox 59 and Firefox 94, this returns a post-redirect URL rather than the raw value of the `src` attribute of the clicked element."
                 },
                 "firefox_android": {
                   "version_added": false
@@ -496,7 +512,7 @@
             "support": {
               "chrome": {
                 "alternative_name": "contextMenus.create",
-                "version_added": true,
+                "version_added": "≤58",
                 "notes": "Items that don't specify 'contexts' do not inherit contexts from their parents."
               },
               "edge": "mirror",
@@ -526,10 +542,10 @@
           },
           "accessKey": {
             "__compat": {
-              "description": "<code>&amp;</code> in <code>title</code> sets access key",
+              "description": "`&amp;` in `title` sets access key",
               "support": {
                 "chrome": {
-                  "version_added": true
+                  "version_added": "≤69"
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -542,7 +558,7 @@
                 "safari": {
                   "version_added": "14",
                   "partial_implementation": true,
-                  "notes": "Safari removes <code>&amp;</code> from menu items' displayed titles, but does not support invoking menu items via access keys."
+                  "notes": "Safari removes `&amp;` from menu items' displayed titles, but does not support invoking menu items via access keys."
                 },
                 "safari_ios": {
                   "version_added": false
@@ -565,9 +581,11 @@
                 },
                 "opera": "mirror",
                 "safari": {
-                  "version_added": false
+                  "version_added": "18"
                 },
-                "safari_ios": "mirror"
+                "safari_ios": {
+                  "version_added": false
+                }
               }
             }
           },
@@ -586,9 +604,11 @@
                 },
                 "opera": "mirror",
                 "safari": {
-                  "version_added": false
+                  "version_added": "18"
                 },
-                "safari_ios": "mirror"
+                "safari_ios": {
+                  "version_added": false
+                }
               }
             }
           },
@@ -644,7 +664,7 @@
             "support": {
               "chrome": {
                 "alternative_name": "contextMenus.onClicked",
-                "version_added": true
+                "version_added": "≤58"
               },
               "edge": "mirror",
               "firefox": [
@@ -782,12 +802,13 @@
             "support": {
               "chrome": {
                 "alternative_name": "contextMenus.remove",
-                "version_added": true
+                "version_added": "≤58"
               },
               "edge": "mirror",
               "firefox": [
                 {
-                  "version_added": "55"
+                  "version_added": "55",
+                  "notes": "From Firefox 136, an error message is returned when the menu item doesn't exist. Previously, the error was ignored and the promise fulfilled."
                 },
                 {
                   "alternative_name": "contextMenus.remove",
@@ -814,7 +835,7 @@
             "support": {
               "chrome": {
                 "alternative_name": "contextMenus.removeAll",
-                "version_added": true
+                "version_added": "≤58"
               },
               "edge": "mirror",
               "firefox": [
@@ -846,12 +867,13 @@
             "support": {
               "chrome": {
                 "alternative_name": "contextMenus.update",
-                "version_added": true
+                "version_added": "≤58"
               },
               "edge": "mirror",
               "firefox": [
                 {
-                  "version_added": "55"
+                  "version_added": "55",
+                  "notes": "From Firefox 136, an error message is returned when the menu item doesn't exist. Previously, the error was ignored and the promise fulfilled."
                 },
                 {
                   "alternative_name": "contextMenus.update",

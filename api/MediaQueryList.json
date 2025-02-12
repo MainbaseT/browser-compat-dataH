@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaQueryList",
         "spec_url": "https://drafts.csswg.org/cssom-view/#the-mediaquerylist-interface",
+        "tags": [
+          "web-features:matchmedia"
+        ],
         "support": {
           "chrome": {
             "version_added": "9"
@@ -33,7 +36,8 @@
           "samsunginternet_android": "mirror",
           "webview_android": {
             "version_added": "≤37"
-          }
+          },
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -43,7 +47,10 @@
       },
       "EventTarget_inheritance": {
         "__compat": {
-          "description": "<code>MediaQueryList</code> inherits <code>EventTarget</code>",
+          "description": "`MediaQueryList` inherits `EventTarget`",
+          "tags": [
+            "web-features:matchmedia"
+          ],
           "support": {
             "chrome": {
               "version_added": "39"
@@ -67,7 +74,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -78,7 +86,7 @@
       },
       "addListener": {
         "__compat": {
-          "description": "<code>addListener()</code>",
+          "description": "`addListener()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaQueryList/addListener",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-mediaquerylist-addlistener",
           "support": {
@@ -110,7 +118,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -121,9 +130,12 @@
       },
       "change_event": {
         "__compat": {
-          "description": "<code>change</code> event",
+          "description": "`change` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaQueryList/change_event",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-mediaquerylist-onchange",
+          "tags": [
+            "web-features:matchmedia"
+          ],
           "support": {
             "chrome": {
               "version_added": "39"
@@ -145,7 +157,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -158,6 +171,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaQueryList/matches",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-mediaquerylist-matches",
+          "tags": [
+            "web-features:matchmedia"
+          ],
           "support": {
             "chrome": {
               "version_added": "9"
@@ -187,7 +203,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -200,6 +217,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaQueryList/media",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-mediaquerylist-media",
+          "tags": [
+            "web-features:matchmedia"
+          ],
           "support": {
             "chrome": {
               "version_added": "9"
@@ -229,7 +249,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -240,7 +261,7 @@
       },
       "removeListener": {
         "__compat": {
-          "description": "<code>removeListener()</code>",
+          "description": "`removeListener()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaQueryList/removeListener",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-mediaquerylist-removelistener",
           "support": {
@@ -272,7 +293,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

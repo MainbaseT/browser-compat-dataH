@@ -4,7 +4,6 @@
       "Temporal": {
         "PlainTime": {
           "__compat": {
-            "description": "Temporal.PlainTime interface",
             "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime",
             "spec_url": "https://tc39.es/proposal-temporal/#sec-temporal-plaintime-objects",
             "tags": [
@@ -13,7 +12,7 @@
             "support": {
               "chrome": {
                 "version_added": false,
-                "impl_url": "https://crbug.com/v8/11544"
+                "impl_url": "https://crbug.com/42201538"
               },
               "chrome_android": "mirror",
               "deno": {
@@ -27,8 +26,15 @@
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": false,
-                "impl_url": "https://bugzil.la/1519167"
+                "version_added": "preview",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "javascript.options.experimental.temporal",
+                    "value_to_set": "true"
+                  }
+                ],
+                "impl_url": "https://bugzil.la/1912511"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -46,7 +52,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -56,7 +63,7 @@
           },
           "PlainTime": {
             "__compat": {
-              "description": "Temporal.PlainTime constructor",
+              "description": "`PlainTime()` constructor",
               "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/PlainTime",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-properties-of-the-temporal-plaintime-constructor",
               "tags": [
@@ -65,7 +72,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -79,8 +86,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -98,7 +112,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -109,8 +124,7 @@
           },
           "add": {
             "__compat": {
-              "description": "Temporal.PlainTime.add()",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/add",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/add",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.add",
               "tags": [
                 "web-features:temporal"
@@ -118,7 +132,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -132,8 +146,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -151,60 +172,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
-              },
-              "status": {
-                "experimental": true,
-                "standard_track": true,
-                "deprecated": false
-              }
-            }
-          },
-          "calendar": {
-            "__compat": {
-              "description": "Temporal.PlainTime.calendar",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/calendar",
-              "spec_url": "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.calendar",
-              "tags": [
-                "web-features:temporal"
-              ],
-              "support": {
-                "chrome": {
-                  "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                  "version_added": "1.40",
-                  "flags": [
-                    {
-                      "type": "runtime_flag",
-                      "name": "--unstable-temporal"
-                    }
-                  ]
-                },
-                "edge": "mirror",
-                "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                  "version_added": false
-                },
-                "nodejs": {
-                  "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                  "version_added": "preview",
-                  "impl_url": "https://webkit.org/b/223166"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -215,15 +184,15 @@
           },
           "compare": {
             "__compat": {
-              "description": "Temporal.PlainTime.compare()",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/compare",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/compare",
+              "spec_url": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.compare",
               "tags": [
                 "web-features:temporal"
               ],
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -237,8 +206,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -256,7 +232,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -267,8 +244,7 @@
           },
           "equals": {
             "__compat": {
-              "description": "Temporal.PlainTime.equals()",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/equals",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/equals",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.equals",
               "tags": [
                 "web-features:temporal"
@@ -276,7 +252,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -290,8 +266,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -309,7 +292,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -320,8 +304,7 @@
           },
           "from": {
             "__compat": {
-              "description": "Temporal.PlainTime.from()",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/from",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/from",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.from",
               "tags": [
                 "web-features:temporal"
@@ -329,7 +312,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -343,8 +326,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -362,60 +352,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
-              },
-              "status": {
-                "experimental": true,
-                "standard_track": true,
-                "deprecated": false
-              }
-            }
-          },
-          "getISOFields": {
-            "__compat": {
-              "description": "Temporal.PlainTime.getISOFields()",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/getisofields",
-              "spec_url": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.getisofields",
-              "tags": [
-                "web-features:temporal"
-              ],
-              "support": {
-                "chrome": {
-                  "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                  "version_added": "1.40",
-                  "flags": [
-                    {
-                      "type": "runtime_flag",
-                      "name": "--unstable-temporal"
-                    }
-                  ]
-                },
-                "edge": "mirror",
-                "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                  "version_added": false
-                },
-                "nodejs": {
-                  "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                  "version_added": "preview",
-                  "impl_url": "https://webkit.org/b/223166"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -426,8 +364,7 @@
           },
           "hour": {
             "__compat": {
-              "description": "Temporal.PlainTime.hour",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/hour",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/hour",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.hour",
               "tags": [
                 "web-features:temporal"
@@ -435,7 +372,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -449,8 +386,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -468,7 +412,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -479,8 +424,7 @@
           },
           "microsecond": {
             "__compat": {
-              "description": "Temporal.PlainTime.microsecond",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/microsecond",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/microsecond",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.microsecond",
               "tags": [
                 "web-features:temporal"
@@ -488,7 +432,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -502,8 +446,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -521,7 +472,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -532,8 +484,7 @@
           },
           "millisecond": {
             "__compat": {
-              "description": "Temporal.PlainTime.millisecond",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/millisecond",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/millisecond",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.millisecond",
               "tags": [
                 "web-features:temporal"
@@ -541,7 +492,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -555,8 +506,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -574,7 +532,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -585,8 +544,7 @@
           },
           "minute": {
             "__compat": {
-              "description": "Temporal.PlainTime.minute",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/minute",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/minute",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.minute",
               "tags": [
                 "web-features:temporal"
@@ -594,7 +552,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -608,8 +566,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -627,7 +592,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -638,8 +604,7 @@
           },
           "nanosecond": {
             "__compat": {
-              "description": "Temporal.PlainTime.nanosecond",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/nanosecond",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/nanosecond",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.nanosecond",
               "tags": [
                 "web-features:temporal"
@@ -647,7 +612,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -661,8 +626,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -680,7 +652,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -691,8 +664,7 @@
           },
           "round": {
             "__compat": {
-              "description": "Temporal.PlainTime.round()",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/round",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/round",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.round",
               "tags": [
                 "web-features:temporal"
@@ -700,7 +672,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -714,8 +686,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -733,7 +712,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -744,8 +724,7 @@
           },
           "second": {
             "__compat": {
-              "description": "Temporal.PlainTime.second",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/second",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/second",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.second",
               "tags": [
                 "web-features:temporal"
@@ -753,7 +732,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -767,8 +746,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -786,7 +772,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -797,8 +784,7 @@
           },
           "since": {
             "__compat": {
-              "description": "Temporal.PlainTime.since()",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/since",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/since",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.since",
               "tags": [
                 "web-features:temporal"
@@ -806,7 +792,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -820,8 +806,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -839,7 +832,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -850,8 +844,7 @@
           },
           "subtract": {
             "__compat": {
-              "description": "Temporal.PlainTime.subtract()",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/subtract",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/subtract",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.subtract",
               "tags": [
                 "web-features:temporal"
@@ -859,7 +852,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -873,8 +866,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -892,7 +892,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -903,8 +904,7 @@
           },
           "toJSON": {
             "__compat": {
-              "description": "Temporal.PlainTime.toJSON()",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/tojson",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/toJSON",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.tojson",
               "tags": [
                 "web-features:temporal"
@@ -912,7 +912,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -926,8 +926,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -945,7 +952,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -956,8 +964,7 @@
           },
           "toLocaleString": {
             "__compat": {
-              "description": "Temporal.PlainTime.toLocaleString()",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/tolocalestring",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/toLocaleString",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.tolocalestring",
               "tags": [
                 "web-features:temporal"
@@ -965,7 +972,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -979,8 +986,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -998,60 +1012,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
-              },
-              "status": {
-                "experimental": true,
-                "standard_track": true,
-                "deprecated": false
-              }
-            }
-          },
-          "toPlainDateTime": {
-            "__compat": {
-              "description": "Temporal.PlainTime.toPlainDateTime()",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/toplaindatetime",
-              "spec_url": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.toplaindatetime",
-              "tags": [
-                "web-features:temporal"
-              ],
-              "support": {
-                "chrome": {
-                  "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                  "version_added": "1.40",
-                  "flags": [
-                    {
-                      "type": "runtime_flag",
-                      "name": "--unstable-temporal"
-                    }
-                  ]
-                },
-                "edge": "mirror",
-                "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                  "version_added": false
-                },
-                "nodejs": {
-                  "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                  "version_added": false,
-                  "impl_url": "https://webkit.org/b/223166"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -1062,8 +1024,7 @@
           },
           "toString": {
             "__compat": {
-              "description": "Temporal.PlainTime.toString()",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/tostring",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/toString",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.tostring",
               "tags": [
                 "web-features:temporal"
@@ -1071,7 +1032,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -1085,8 +1046,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -1104,60 +1072,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
-              },
-              "status": {
-                "experimental": true,
-                "standard_track": true,
-                "deprecated": false
-              }
-            }
-          },
-          "toZonedDateTime": {
-            "__compat": {
-              "description": "Temporal.PlainTime.toZonedDateTime()",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/tozoneddatetime",
-              "spec_url": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.tozoneddatetime",
-              "tags": [
-                "web-features:temporal"
-              ],
-              "support": {
-                "chrome": {
-                  "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                  "version_added": "1.40",
-                  "flags": [
-                    {
-                      "type": "runtime_flag",
-                      "name": "--unstable-temporal"
-                    }
-                  ]
-                },
-                "edge": "mirror",
-                "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                  "version_added": false
-                },
-                "nodejs": {
-                  "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                  "version_added": false,
-                  "impl_url": "https://webkit.org/b/223166"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -1168,8 +1084,7 @@
           },
           "until": {
             "__compat": {
-              "description": "Temporal.PlainTime.until()",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/until",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/until",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.until",
               "tags": [
                 "web-features:temporal"
@@ -1177,7 +1092,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -1191,8 +1106,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -1210,7 +1132,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -1221,8 +1144,7 @@
           },
           "valueOf": {
             "__compat": {
-              "description": "Temporal.PlainTime.valueOf()",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/valueof",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/valueOf",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.valueof",
               "tags": [
                 "web-features:temporal"
@@ -1230,7 +1152,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -1244,8 +1166,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -1263,7 +1192,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,
@@ -1274,8 +1204,7 @@
           },
           "with": {
             "__compat": {
-              "description": "Temporal.PlainTime.with()",
-              "mdn_url": "https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/with",
+              "mdn_url": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/with",
               "spec_url": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.with",
               "tags": [
                 "web-features:temporal"
@@ -1283,7 +1212,7 @@
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/v8/11544"
+                  "impl_url": "https://crbug.com/42201538"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -1297,8 +1226,15 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                  "version_added": false,
-                  "impl_url": "https://bugzil.la/1519167"
+                  "version_added": "preview",
+                  "flags": [
+                    {
+                      "type": "preference",
+                      "name": "javascript.options.experimental.temporal",
+                      "value_to_set": "true"
+                    }
+                  ],
+                  "impl_url": "https://bugzil.la/1912511"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -1316,7 +1252,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": true,

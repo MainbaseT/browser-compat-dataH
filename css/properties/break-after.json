@@ -9,6 +9,9 @@
             "https://drafts.csswg.org/css-regions/#region-flow-break",
             "https://drafts.csswg.org/css-multicol/#break-before-break-after-break-inside"
           ],
+          "tags": [
+            "web-features:page-breaks"
+          ],
           "support": {
             "chrome": {
               "version_added": "50"
@@ -48,7 +51,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -58,6 +62,9 @@
         },
         "always": {
           "__compat": {
+            "tags": [
+              "web-features:page-breaks"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -79,7 +86,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -90,14 +98,15 @@
         },
         "auto": {
           "__compat": {
+            "tags": [
+              "web-features:page-breaks"
+            ],
             "support": {
               "chrome": {
                 "version_added": "≤80"
               },
               "chrome_android": "mirror",
-              "edge": {
-                "version_added": "≤80"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "≤72"
               },
@@ -113,7 +122,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -124,14 +134,15 @@
         },
         "avoid": {
           "__compat": {
+            "tags": [
+              "web-features:page-breaks"
+            ],
             "support": {
               "chrome": {
                 "version_added": "≤80"
               },
               "chrome_android": "mirror",
-              "edge": {
-                "version_added": "≤80"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "≤72"
               },
@@ -147,7 +158,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -158,14 +170,15 @@
         },
         "avoid-column": {
           "__compat": {
+            "tags": [
+              "web-features:column-breaks"
+            ],
             "support": {
               "chrome": {
                 "version_added": "≤80"
               },
               "chrome_android": "mirror",
-              "edge": {
-                "version_added": "≤80"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": false
               },
@@ -181,7 +194,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -192,14 +206,15 @@
         },
         "avoid-page": {
           "__compat": {
+            "tags": [
+              "web-features:page-breaks"
+            ],
             "support": {
               "chrome": {
                 "version_added": "≤80"
               },
               "chrome_android": "mirror",
-              "edge": {
-                "version_added": "≤80"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": false
               },
@@ -215,7 +230,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -226,14 +242,15 @@
         },
         "column": {
           "__compat": {
+            "tags": [
+              "web-features:column-breaks"
+            ],
             "support": {
               "chrome": {
                 "version_added": "≤80"
               },
               "chrome_android": "mirror",
-              "edge": {
-                "version_added": "≤80"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": false
               },
@@ -249,7 +266,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -260,14 +278,15 @@
         },
         "left": {
           "__compat": {
+            "tags": [
+              "web-features:page-breaks"
+            ],
             "support": {
               "chrome": {
                 "version_added": "≤80"
               },
               "chrome_android": "mirror",
-              "edge": {
-                "version_added": "≤80"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "≤72"
               },
@@ -283,7 +302,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -300,6 +320,9 @@
               "https://drafts.csswg.org/css-regions/#region-flow-break",
               "https://drafts.csswg.org/css-multicol/#break-before-break-after-break-inside"
             ],
+            "tags": [
+              "web-features:column-breaks"
+            ],
             "support": {
               "chrome": {
                 "version_added": "50"
@@ -311,7 +334,7 @@
               "firefox": {
                 "version_added": "65",
                 "partial_implementation": true,
-                "notes": "Only supported in print mode. See <a href='https://bugzil.la/1675322'>bug 1675322</a>."
+                "notes": "Only supported in print mode. See [bug 1675322](https://bugzil.la/1675322)."
               },
               "firefox_android": "mirror",
               "ie": {
@@ -341,7 +364,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -351,7 +375,6 @@
           },
           "always": {
             "__compat": {
-              "description": "<code>always</code>",
               "support": {
                 "chrome": {
                   "version_added": false
@@ -361,7 +384,7 @@
                 "firefox": {
                   "version_added": "65",
                   "partial_implementation": true,
-                  "notes": "Only supported in print mode. See <a href='https://bugzil.la/1675322'>bug 1675322</a>."
+                  "notes": "Only supported in print mode. See [bug 1675322](https://bugzil.la/1675322)."
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -375,7 +398,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -386,7 +410,9 @@
           },
           "avoid": {
             "__compat": {
-              "description": "<code>avoid</code>",
+              "tags": [
+                "web-features:column-breaks"
+              ],
               "support": {
                 "chrome": {
                   "version_added": "102"
@@ -424,7 +450,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -435,7 +462,9 @@
           },
           "avoid-column": {
             "__compat": {
-              "description": "<code>avoid-column</code>",
+              "tags": [
+                "web-features:column-breaks"
+              ],
               "support": {
                 "chrome": {
                   "version_added": "102"
@@ -481,7 +510,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -492,7 +522,9 @@
           },
           "column": {
             "__compat": {
-              "description": "<code>column</code>",
+              "tags": [
+                "web-features:column-breaks"
+              ],
               "support": {
                 "chrome": {
                   "version_added": "50"
@@ -532,7 +564,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -544,14 +577,15 @@
         },
         "page": {
           "__compat": {
+            "tags": [
+              "web-features:page-breaks"
+            ],
             "support": {
               "chrome": {
                 "version_added": "≤80"
               },
               "chrome_android": "mirror",
-              "edge": {
-                "version_added": "≤80"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "≤72"
               },
@@ -567,7 +601,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -583,6 +618,9 @@
               "https://drafts.csswg.org/css-break/#break-between",
               "https://drafts.csswg.org/css-regions/#region-flow-break",
               "https://drafts.csswg.org/css-multicol/#break-before-break-after-break-inside"
+            ],
+            "tags": [
+              "web-features:page-breaks"
             ],
             "support": {
               "chrome": {
@@ -623,7 +661,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -633,7 +672,6 @@
           },
           "always": {
             "__compat": {
-              "description": "<code>always</code>",
               "support": {
                 "chrome": {
                   "version_added": false
@@ -663,7 +701,8 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                   "version_added": "50"
-                }
+                },
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -674,6 +713,9 @@
           },
           "avoid-page": {
             "__compat": {
+              "tags": [
+                "web-features:page-breaks"
+              ],
               "support": {
                 "chrome": {
                   "version_added": "50"
@@ -700,7 +742,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -711,6 +754,9 @@
           },
           "page": {
             "__compat": {
+              "tags": [
+                "web-features:page-breaks"
+              ],
               "support": {
                 "chrome": {
                   "version_added": "50"
@@ -737,7 +783,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -748,11 +795,14 @@
           },
           "recto": {
             "__compat": {
-              "description": "<code>recto</code> and <code>verso</code>",
+              "description": "`recto` and `verso`",
+              "tags": [
+                "web-features:page-breaks"
+              ],
               "support": {
                 "chrome": {
                   "version_added": false,
-                  "impl_url": "https://crbug.com/538475"
+                  "impl_url": "https://crbug.com/40438447"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -771,7 +821,8 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror"
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
               },
               "status": {
                 "experimental": false,
@@ -783,14 +834,15 @@
         },
         "recto": {
           "__compat": {
+            "tags": [
+              "web-features:page-breaks"
+            ],
             "support": {
               "chrome": {
                 "version_added": "≤80"
               },
               "chrome_android": "mirror",
-              "edge": {
-                "version_added": "≤80"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": false
               },
@@ -806,7 +858,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -817,14 +870,15 @@
         },
         "right": {
           "__compat": {
+            "tags": [
+              "web-features:page-breaks"
+            ],
             "support": {
               "chrome": {
                 "version_added": "≤80"
               },
               "chrome_android": "mirror",
-              "edge": {
-                "version_added": "≤80"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": "≤72"
               },
@@ -840,7 +894,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -851,14 +906,15 @@
         },
         "verso": {
           "__compat": {
+            "tags": [
+              "web-features:page-breaks"
+            ],
             "support": {
               "chrome": {
                 "version_added": "≤80"
               },
               "chrome_android": "mirror",
-              "edge": {
-                "version_added": "≤80"
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": false
               },
@@ -874,7 +930,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

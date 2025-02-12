@@ -36,7 +36,8 @@
             "version_added": "8"
           },
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -46,7 +47,7 @@
       },
       "VTTCue": {
         "__compat": {
-          "description": "<code>VTTCue()</code> constructor",
+          "description": "`VTTCue()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VTTCue/VTTCue",
           "spec_url": "https://w3c.github.io/webvtt/#dom-vttcue-vttcue",
           "tags": [
@@ -73,7 +74,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -87,7 +89,7 @@
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VTTCue/align",
           "spec_url": "https://w3c.github.io/webvtt/#dom-vttcue-align",
           "tags": [
-            "web-features:webvtt"
+            "web-features:webvtt-cue-settings"
           ],
           "support": {
             "chrome": {
@@ -116,7 +118,8 @@
               "version_added": "8"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -161,7 +164,8 @@
               "version_added": "8"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -175,7 +179,7 @@
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VTTCue/line",
           "spec_url": "https://w3c.github.io/webvtt/#dom-vttcue-line",
           "tags": [
-            "web-features:webvtt"
+            "web-features:webvtt-cue-settings"
           ],
           "support": {
             "chrome": {
@@ -204,7 +208,8 @@
               "version_added": "8"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -217,10 +222,13 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VTTCue/lineAlign",
           "spec_url": "https://w3c.github.io/webvtt/#dom-vttcue-linealign",
+          "tags": [
+            "web-features:webvtt-cue-alignment"
+          ],
           "support": {
             "chrome": {
               "version_added": false,
-              "impl_url": "https://crbug.com/633690"
+              "impl_url": "https://crbug.com/41267398"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -239,7 +247,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -253,7 +262,7 @@
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VTTCue/position",
           "spec_url": "https://w3c.github.io/webvtt/#dom-vttcue-position",
           "tags": [
-            "web-features:webvtt"
+            "web-features:webvtt-cue-settings"
           ],
           "support": {
             "chrome": {
@@ -282,7 +291,8 @@
               "version_added": "8"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -295,10 +305,13 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VTTCue/positionAlign",
           "spec_url": "https://w3c.github.io/webvtt/#dom-vttcue-positionalign",
+          "tags": [
+            "web-features:webvtt-cue-alignment"
+          ],
           "support": {
             "chrome": {
               "version_added": false,
-              "impl_url": "https://crbug.com/633690"
+              "impl_url": "https://crbug.com/41267398"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -317,7 +330,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -330,6 +344,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VTTCue/region",
           "spec_url": "https://w3c.github.io/webvtt/#dom-vttcue-region",
+          "tags": [
+            "web-features:webvtt-regions"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -351,7 +368,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -365,7 +383,7 @@
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VTTCue/size",
           "spec_url": "https://w3c.github.io/webvtt/#dom-vttcue-size",
           "tags": [
-            "web-features:webvtt"
+            "web-features:webvtt-cue-settings"
           ],
           "support": {
             "chrome": {
@@ -394,7 +412,8 @@
               "version_added": "8"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -408,7 +427,7 @@
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VTTCue/snapToLines",
           "spec_url": "https://w3c.github.io/webvtt/#dom-vttcue-snaptolines",
           "tags": [
-            "web-features:webvtt"
+            "web-features:webvtt-cue-settings"
           ],
           "support": {
             "chrome": {
@@ -437,7 +456,8 @@
               "version_added": "8"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -482,12 +502,50 @@
               "version_added": "8"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
             "deprecated": false
+          }
+        },
+        "all_html_character_references": {
+          "__compat": {
+            "description": "All HTML character references allowed.",
+            "tags": [
+              "web-features:webvtt"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "≤80"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "127"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "17.5"
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
           }
         }
       },
@@ -496,7 +554,7 @@
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/VTTCue/vertical",
           "spec_url": "https://w3c.github.io/webvtt/#dom-vttcue-vertical",
           "tags": [
-            "web-features:webvtt"
+            "web-features:webvtt-cue-settings"
           ],
           "support": {
             "chrome": {
@@ -521,7 +579,8 @@
               "version_added": "8"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
